@@ -5,12 +5,14 @@
 Dart-Zähl-App für Vereine und Freunde – eine Single-Page-Web-App / PWA mit einem kleinen PHP-Server für Online-Spiele.
 Keine Werbung, kein Tracking, **eine Installation = ein Verein**. Die Oberfläche gibt es auf Ungarisch, Englisch und Deutsch.
 
+🤖 Entwickelt mit Hilfe von [Claude](https://claude.ai) (Anthropic).
+
 ## Funktionen
 
 - **X01** (301/501/701…, Double-in / Double-out / Master, Legs und Sets, Handicap, Bots) und **Cricket**
 - Schnelle Punkteingabe, Checkout-Vorschläge, Korrektur früherer Aufnahmen (✏️), Rückgängig
 - Statistiken pro Spiel und Spieler: Average, 100+/140+/180, höchster Checkout, Verlauf je Leg
-- Spielverlauf, Spieler und Profile, **Training** und **Turniere**
+- Spielverlauf, Spieler und Profile, **Training** (Around the Clock, Bob's 27, Shanghai, Checkout-Übung) und **Turniere**
 - **Online-1-gegen-1-Spiele** mit Konten, Freunden und Herausforderungen
 - Als App installierbar (PWA), lokale Spiele funktionieren offline; Schriften sind enthalten (keine externen Anfragen)
 - **Admin-Seite** und **Update von GitHub** (siehe unten)
@@ -19,33 +21,34 @@ Keine Werbung, kein Tracking, **eine Installation = ein Verein**. Die Oberfläch
 
 <table>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-01-home.png" width="230"><br><sub>Startseite</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-02-new-game-players.png" width="230"><br><sub>Neues Spiel – Spieler</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-03-new-game-rules.png" width="230"><br><sub>Neues Spiel – Regeln</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-01-home.png" width="230"><br><sub>Startseite</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-02-new-game-players.png" width="230"><br><sub>Neues Spiel – Spieler</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-03-new-game-rules.png" width="230"><br><sub>Neues Spiel – Regeln</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-04-game.png" width="230"><br><sub>Punkteeingabe</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-05-game-menu.png" width="230"><br><sub>Spielmenü</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-06-correct-turns.png" width="230"><br><sub>Aufnahmen korrigieren</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-04-game.png" width="230"><br><sub>Punkteeingabe</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-05-game-menu.png" width="230"><br><sub>Spielmenü</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-06-correct-turns.png" width="230"><br><sub>Aufnahmen korrigieren</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-07-match-stats.png" width="230"><br><sub>Spielstatistik</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-08-cricket.png" width="230"><br><sub>Cricket</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-16-match-result.png" width="230"><br><sub>Spielergebnis</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-07-match-stats.png" width="230"><br><sub>Spielstatistik</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-08-cricket.png" width="230"><br><sub>Cricket</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-16-match-result.png" width="230"><br><sub>Spielergebnis</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-09-history.png" width="230"><br><sub>Verlauf</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-10-players.png" width="230"><br><sub>Spieler</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-10b-profile.png" width="230"><br><sub>Spielerprofil</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-09-history.png" width="230"><br><sub>Verlauf</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-10-players.png" width="230"><br><sub>Spieler</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-10b-profile.png" width="230"><br><sub>Spielerprofil</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-11-training.png" width="230"><br><sub>Training</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-12-tournament.png" width="230"><br><sub>Turnier</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-13-online.png" width="230"><br><sub>Online-Spiel</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-11-training.png" width="230"><br><sub>Training</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-11c-shanghai.png" width="230"><br><sub>Shanghai-Training</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-12-tournament.png" width="230"><br><sub>Turnier</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-14-account.png" width="230"><br><sub>Konto</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-15-settings.png" width="230"><br><sub>Einstellungen</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-13-online.png" width="230"><br><sub>Online-Spiel</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-14-account.png" width="230"><br><sub>Konto</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/de/app-15-settings.png" width="230"><br><sub>Einstellungen</sub></td>
 </tr>
 </table>
 
@@ -56,32 +59,32 @@ Keine Werbung, kein Tracking, **eine Installation = ein Verein**. Die Oberfläch
 #### Anmeldung
 Nur Admin-Konten (der Basis-Admin aus dem Installer und von ihm ernannte Admins).
 
-<img src="docs/screenshots/admin-1-login.png" width="640">
+<img src="docs/screenshots/de/admin-1-login.png" width="640">
 
 #### Spieler
 Alle Online-Konten mit Suche; Spieler, die ihr Passwort vergessen haben, erscheinen als rote Karte, damit ein neues vergeben werden kann.
 
-<img src="docs/screenshots/admin-2-players.png" width="640">
+<img src="docs/screenshots/de/admin-2-players.png" width="640">
 
 #### Spieleraktionen
 Sperren, Löschen, neues Passwort, Admin ernennen/entziehen (Admins ernennen kann nur der Basis-Admin).
 
-<img src="docs/screenshots/admin-3-player-actions.png" width="640">
+<img src="docs/screenshots/de/admin-3-player-actions.png" width="640">
 
 #### Meldungen
 Von Spielern gemeldete Inhalte; abschließen oder eingreifen.
 
-<img src="docs/screenshots/admin-4-reports.png" width="640">
+<img src="docs/screenshots/de/admin-4-reports.png" width="640">
 
 #### Verein
 Vereinsname, Hauptfarbe und Logo – sofort wirksam, ohne Dateien zu bearbeiten.
 
-<img src="docs/screenshots/admin-5-club.png" width="640">
+<img src="docs/screenshots/de/admin-5-club.png" width="640">
 
 #### Update
 Zeigt die installierte und die neueste GitHub-Version mit Änderungshinweisen; der Basis-Admin installiert sie mit einem Klick.
 
-<img src="docs/screenshots/admin-6-update.png" width="640">
+<img src="docs/screenshots/de/admin-6-update.png" width="640">
 
 ## Update über die Admin-Seite
 
@@ -114,7 +117,7 @@ Inhalt von [`app/`](app/) (oder das Release-Zip) auf ein beliebiges PHP-7.4+-Hos
 | `app/admin.html` | Admin-Seite |
 | `app/sw.js`, `app/manifest.webmanifest` | PWA |
 | `app/fonts/` | mitgelieferte Schriften |
-| `docs/screenshots/` | Screenshots |
+| `docs/screenshots/de/` | Screenshots |
 
 ## Lizenz
 

@@ -5,12 +5,14 @@
 Darts pontozó alkalmazás klubok és barátok számára – egyoldalas webapp / PWA, online játékhoz egy kis PHP szerverrel.
 Nincs reklám, nincs követés, **egy telepítés = egy klub**. A felület magyar, angol és német nyelvű.
 
+🤖 A [Claude](https://claude.ai) (Anthropic) segítségével készült.
+
 ## Funkciók
 
 - **X01** (301/501/701…, beszálló/kiszálló/master, legek és szettek, hendikep, botok) és **Cricket**
 - Gyors pontbevitel, kiszálló-javaslat, korábbi körök javítása (✏️), visszavonás
 - Statisztika meccsenként és játékosonként: átlag, 100+/140+/180, legnagyobb kiszálló, legenkénti alakulás
-- Meccselőzmények, játékosok és profilok, **edzés** módok és **versenyek**
+- Meccselőzmények, játékosok és profilok, **edzés** (Around the Clock, Bob's 27, Shanghai, kiszálló-gyakorló) és **versenyek**
 - **Online 1v1 játék** fiókkal, barátokkal és kihívásokkal
 - Telepíthető appként (PWA), helyi játék offline is működik; a betűtípusok a csomagban vannak (nincs külső kérés)
 - **Admin felület** és **frissítés GitHubról** (lásd lent)
@@ -19,33 +21,34 @@ Nincs reklám, nincs követés, **egy telepítés = egy klub**. A felület magya
 
 <table>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-01-home.png" width="230"><br><sub>Főoldal</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-02-new-game-players.png" width="230"><br><sub>Új játék – játékosok</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-03-new-game-rules.png" width="230"><br><sub>Új játék – szabályok</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-01-home.png" width="230"><br><sub>Főoldal</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-02-new-game-players.png" width="230"><br><sub>Új játék – játékosok</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-03-new-game-rules.png" width="230"><br><sub>Új játék – szabályok</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-04-game.png" width="230"><br><sub>Pontozás</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-05-game-menu.png" width="230"><br><sub>Játék menü</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-06-correct-turns.png" width="230"><br><sub>Körök javítása</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-04-game.png" width="230"><br><sub>Pontozás</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-05-game-menu.png" width="230"><br><sub>Játék menü</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-06-correct-turns.png" width="230"><br><sub>Körök javítása</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-07-match-stats.png" width="230"><br><sub>Meccs statisztika</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-08-cricket.png" width="230"><br><sub>Cricket</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-16-match-result.png" width="230"><br><sub>Meccs eredmény</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-07-match-stats.png" width="230"><br><sub>Meccs statisztika</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-08-cricket.png" width="230"><br><sub>Cricket</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-16-match-result.png" width="230"><br><sub>Meccs eredmény</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-09-history.png" width="230"><br><sub>Előzmények</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-10-players.png" width="230"><br><sub>Játékosok</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-10b-profile.png" width="230"><br><sub>Játékos profil</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-09-history.png" width="230"><br><sub>Előzmények</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-10-players.png" width="230"><br><sub>Játékosok</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-10b-profile.png" width="230"><br><sub>Játékos profil</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-11-training.png" width="230"><br><sub>Edzés</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-12-tournament.png" width="230"><br><sub>Verseny</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-13-online.png" width="230"><br><sub>Online játék</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-11-training.png" width="230"><br><sub>Edzés</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-11c-shanghai.png" width="230"><br><sub>Shanghai edzés</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-12-tournament.png" width="230"><br><sub>Verseny</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><img src="docs/screenshots/app-14-account.png" width="230"><br><sub>Fiók</sub></td>
-<td align="center" width="33%"><img src="docs/screenshots/app-15-settings.png" width="230"><br><sub>Beállítások</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-13-online.png" width="230"><br><sub>Online játék</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-14-account.png" width="230"><br><sub>Fiók</sub></td>
+<td align="center" width="33%"><img src="docs/screenshots/hu/app-15-settings.png" width="230"><br><sub>Beállítások</sub></td>
 </tr>
 </table>
 
@@ -56,32 +59,32 @@ Nincs reklám, nincs követés, **egy telepítés = egy klub**. A felület magya
 #### Belépés
 Csak admin fiókkal (a telepítőben megadott alapadmin és az általa kinevezett adminok).
 
-<img src="docs/screenshots/admin-1-login.png" width="640">
+<img src="docs/screenshots/hu/admin-1-login.png" width="640">
 
 #### Játékosok
 Az összes online fiók kereséssel; az elfelejtett jelszavúak piros kártyán jelennek meg, hogy új jelszót lehessen adni.
 
-<img src="docs/screenshots/admin-2-players.png" width="640">
+<img src="docs/screenshots/hu/admin-2-players.png" width="640">
 
 #### Játékos műveletek
 Felfüggesztés, törlés, új jelszó, admin kinevezése / visszavonása (adminokat csak az alapadmin nevezhet ki).
 
-<img src="docs/screenshots/admin-3-player-actions.png" width="640">
+<img src="docs/screenshots/hu/admin-3-player-actions.png" width="640">
 
 #### Bejelentések
 A játékosok bejelentései a bejelentett tartalommal; lezárható vagy intézkedhető.
 
-<img src="docs/screenshots/admin-4-reports.png" width="640">
+<img src="docs/screenshots/hu/admin-4-reports.png" width="640">
 
 #### Klub
 Klub neve, főszíne és logója – azonnal érvényesül, fájlszerkesztés nélkül.
 
-<img src="docs/screenshots/admin-5-club.png" width="640">
+<img src="docs/screenshots/hu/admin-5-club.png" width="640">
 
 #### Frissítés
 Megmutatja a telepített és a legújabb GitHub kiadást a változások leírásával; az alapadmin egy kattintással telepítheti.
 
-<img src="docs/screenshots/admin-6-update.png" width="640">
+<img src="docs/screenshots/hu/admin-6-update.png" width="640">
 
 ## Frissítés az admin felületről
 
@@ -114,7 +117,7 @@ Az *Inter* az `app/fonts/` mappában van (SIL OFL); külső betűtípus-kérés 
 | `app/admin.html` | admin felület |
 | `app/sw.js`, `app/manifest.webmanifest` | PWA |
 | `app/fonts/` | a csomagolt betűtípusok |
-| `docs/screenshots/` | képernyőfotók |
+| `docs/screenshots/hu/` | képernyőfotók |
 
 ## Licenc
 

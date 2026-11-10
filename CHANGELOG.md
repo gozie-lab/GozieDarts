@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.27
+- New training mode: **Shanghai** (7 or 20 rounds, optional instant win on S+D+T in one round, personal records).
+- Admin page redesigned for phones: bottom navigation with badges, menu (language, sign out), whole rows are tappable, larger touch targets.
+
 ## 1.26
 - The admin page is now available in Hungarian, English and German (language selector; shared with the app setting).
 - Server error messages that were missing from the English/German translation are now translated (app and admin).
