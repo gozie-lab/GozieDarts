@@ -1,0 +1,27 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check version
+        run: |
+          V="${GITHUB_REF_NAME#v}"
+          [ "$(tr -d '[:space:]' < app/VERSION)" = "$V" ] || { echo "app/VERSION does not match tag"; exit 1; }
+      - name: Build zip
+        run: |
+          cd app && zip -r ../GozieDarts.zip . -x 'darts-config.php' -x 'darts-data*' -x '.*'
+          cd .. && sha256sum GozieDarts.zip > GozieDarts.zip.sha256
+      - name: Release notes
+        run: |
+          V="${GITHUB_REF_NAME#v}"
+          awk -v v="$V" '$0=="## " v {f=1; next} /^## /{f=0} f' CHANGELOG.md > notes.md
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" GozieDarts.zip GozieDarts.zip.sha256 --title "GozieDarts $GITHUB_REF_NAME" --notes-file notes.md

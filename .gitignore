@@ -1,0 +1,4 @@
+# club settings and data must never be committed
+app/darts-config.php
+darts-data*/
+*.zip
